@@ -1,9 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+static double GetAvg(int[] numbers)
+{
+    double sum = 0;
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        sum += numbers[i];
+    }
 
-Console.WriteLine("Modyfikacja");
-Console.WriteLine("Modyfikacja2");
-Console.WriteLine("Hello");
-Console.WriteLine("NO");
-Console.WriteLine("YEs");
+    return sum / numbers.Length;
+}
