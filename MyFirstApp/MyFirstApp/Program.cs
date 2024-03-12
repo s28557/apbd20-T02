@@ -10,3 +10,7 @@ static double GetAvg(int[] numbers)
 
     return sum / numbers.Length;
 }
+
+int[] numbers = {1, 2, 3, 4, 5};
+double avg = GetAvg(numbers);
+Console.WriteLine(avg);
